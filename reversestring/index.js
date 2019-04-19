@@ -6,6 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+/************Sol-1************/
 // function reverse(str) {
 //     return str
 //         .split("")
@@ -13,6 +14,7 @@
 //         .join("");
 // }
 
+/*************Sol-2************/
 // function reverse(str) {
 //     let reversed = "";
 //     for (let char of str) {
@@ -21,6 +23,7 @@
 //     return reversed;
 // }
 
+/************Sol-3************/
 function reverse(str) {
     return str.split("").reduce((rev, char) => char + rev, "");
 }
